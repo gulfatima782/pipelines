@@ -15,3 +15,15 @@ jobs:
         run: |
           echo "Welcome to GitHub Actions!"
           echo "This job is running on an automated Ubuntu runner."
+
+say-hello-2:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run a one-line script-2
+        run: echo "Hello, World 2!"
+
+      - name: Run a multi-line script-2
+        run: |
+          echo "Welcome to GitHub Actions 2!"
+          echo "This job is running on an automated Ubuntu runner. 2"
