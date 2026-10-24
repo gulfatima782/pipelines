@@ -1,0 +1,17 @@
+name: Hello World Workflow
+
+# Triggers the workflow manually or on every push to the repository
+on: [push, workflow_dispatch]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run a one-line script
+        run: echo "Hello, World!"
+
+      - name: Run a multi-line script
+        run: |
+          echo "Welcome to GitHub Actions!"
+          echo "This job is running on an automated Ubuntu runner."
